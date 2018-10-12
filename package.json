@@ -1,0 +1,23 @@
+{
+  "name": "parcel-starter",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.js",
+    "dev": "parcel public/index.html",
+    "lint": "eslint \"./public/**/*.js\"",
+    "todo": "leasot -x --tags info,review './public/**/*.js' --ignore './public/dist/*'",
+    "todo:write": "npm run todo -- > TODO.md && echo './TODO.md Created...'"
+  },
+  "keywords": [],
+  "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
+  "license": "MIT",
+  "dependencies": {
+    "cd-messenger": "2.7.26"
+  },
+  "devDependencies": {
+    "eslint": "5.7.0",
+    "leasot": "6.6.2"
+  }
+}
